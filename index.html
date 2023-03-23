@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -95,6 +96,107 @@
           </ul>
         </div>
       </header>
+    </div>
+    <div class="menu-bg">
+      <div class="container">
+        <div class="menu1">
+          <div class="logo1">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+          <div class="menu-black">
+            <img src="./images/menu.png" alt="menu" />
+          </div>
+        </div>
+
+
+        <div class="mobile-menu">
+          <div class="mobmenu-top">
+              <img src="./images/logo.png" alt="logo"/>
+            <div class="close">
+              &times;
+            </div>
+          </div>
+          <div class="icon">
+            <ul>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/home-icon.png"alt="home-icon"/>
+                Home
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+            </a>
+            </li>
+           
+            </a>
+              </li>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/discover-icon.png"alt="discover-icon"/>
+                Discover
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+          
+            </a>
+              </li>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/calendar-icon.png"alt="calender-icon"/>
+                Calender
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+           
+            </a>
+              </li>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/email-icon.png"alt="email-icon"/>
+                Email
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+         
+            </a>
+              </li>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/setting-icon.png"alt="setting-icon"/>
+                Setting
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+            
+            </a>
+              </li>
+              <li> 
+                <a href="#">
+              <div>
+                <img src="./images/logout-icon.png"alt="logout-icon"/>
+                Log Out
+              </div>
+              <div class="icon1">
+                <img src="./images/side-icon.png" alt="side-icon"/>
+              </div>
+           
+            </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="overlay1"></div>
+      </div>
     </div>
 
     <div
@@ -534,7 +636,7 @@
       <!-- blog-start -->
       <div class="container">
         <div class="heading">
-          <h3>Our Latest Blog</h3>
+          <h4>Our Latest Blog</h4>
           <h2>Stay Motivated, Read the Blog</h2>
         </div>
         <div class="row">
@@ -777,6 +879,18 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".menu1").click(function () {
+        $('.mobile-menu').show('slide, right, 500');
+        $('.overlay1').show('slide, right, 500');
+      });
+      $(".close").click(function () {
+        $('.mobile-menu').hide('slide, right, 500');
+        $('.overlay1').hide('slide, right, 500');
+      });
+    });
+  </script>
   <script
     type="text/javascript"
     src="https://code.jquery.com/jquery-1.11.0.min.js"
